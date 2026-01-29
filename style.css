@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body {
+    background-color: #f9fbfc;
+    color: #333;
+    transition: background-color 0.3s ease 0.3s;
+}
+body:hover {
+    background-color: #fff ;
+}
+header {
+    background-color: #ffffff;
+    box-shadow:0 2px 5px rgba(0, 0, 0, 0.1) ;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 1.8rem;
+    color:  #222;
+}
+.logo span {
+    color: #007bff;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #007bff;
+}
+#themeBtn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #e0f0ff, #fefefe);
+    text-align: center;
+    padding: 2rem;
+}
+.hero-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+
+}
+.hero-content span {
+    color: #007bff;
+}
+.hero-content p {
+    margin-bottom: 1.5rem;
+}
+.btn {
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+
+}
+.btn:hover {
+    background: #0056b3;
+}
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.project-card {
+    background: #fff;
+    width: 280px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.project-card:hover {
+    transform: translateY(-7px);
+}
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+/* Dark mode  */
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #eee;
+}
+.dark-mode header {
+    background: #1c1717;
+}
+.dark-mode .project-card {
+    background: #2c2c2c;
+}
+@media (max-width:768px) {
+
+    .navbar{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    #themeBtn {
+        margin-top: 0.5rem;
+    }
+}
