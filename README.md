@@ -5,7 +5,7 @@ This project represents my first step as a Frontend Developer, focusing on moder
 
 🌐 Live Preview
 
-(Enable GitHub Pages to view the live site)
+( https://Maavia971.github.io/personal-portfolio/)
 
 ✨ Features
 
